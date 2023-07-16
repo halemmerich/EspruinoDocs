@@ -214,6 +214,11 @@ GB({"t":"musicinfo","artist":"My Artist","album":"My Album","track":"Track One",
 GB({"t":"call","cmd":"incoming","name":"name","number":"+441234123123"})
 // Set a single alarm, 6:30am, every day of the week
 GB({"t":"alarm", "d":[{"h":"6","m":"30:","rep":127}]})
+// Send a GPS location
+GB({"t":"gps", "lat":51.509865, "lon":-0.118092, "alt":42, "speed":0, "time":1684413470805,"satellites":11,"hdop":10.720000267028809,"externalSource":true })
+// Send a navigation message
+GB({t:"nav",src:"maps",title:"Navigation",instr:"High St towards Tollgate Rd",distance:"966yd",action:"continue",eta:"08:39"})
+
 ```
 
 ### Messages from Bangle.js to Phone
